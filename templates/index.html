@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Link Form</title>
+</head>
+<body>
+    <h1>Enter Your Name and Number of Links</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <p>{{ form.name.label }} {{ form.name }}</p>
+        <p>{{ form.num_links.label }} {{ form.num_links }}</p>
+        <p>{{ form.submit() }}</p>
+    </form>
+</body>
+</html>
